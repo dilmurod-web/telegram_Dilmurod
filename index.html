@@ -5,24 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Document</title>
+    <link rel="icon" href="./img/telegram.svg">
+    <title>Talagram-clone</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main class="main">
-        <ul class="folders-list">
-            
-        </ul>
-        <ul class="contacts-list">
-            <li class="contacts-item"></li>
-            <li class="contacts-item"></li>
-            <li class="contacts-item"></li>
-            <li class="contacts-item"></li>
-            <li class="contacts-item"></li>
-        </ul>
-        <div class="chat-list">
-
+    <div class="background-modal">
+        <div class="modal">
+            <header class="modal-header">
+                <span class="modal-header__info">
+                    <img class="modal-header__info__img" src="./img/user_6.jpg" alt="">
+                    <span class="modal-header__info__icons">
+                        <button class="modal-header__info__icons-btn">
+                            <img class="modal-header__info__icons-btn__img" src="./img/folder.svg" alt="archive-icon">
+                        </button>
+                        <button class="modal-header__info__icons-btn">
+                            <img class="modal-header__info__icons-btn__img" src="./img/bookmark.svg " alt="saved-messages-icon">
+                        </button>
+                    </span>
+                </span>
+                <button class="modal-header__btn">
+                    <span class="modal-header__text">
+                        <p class="modal-header__btn__title">Dilmurod</p>
+                        <p class="modal-header__btn__subtitle">+998 99 823 85 38</p>
+                    </span>
+                    <img class="modal-header__img" src="./img/arrow-down-sign-to-navigate.svg" alt="modal-header__img">
+                </button>
+            </header>
+            <ul class="modal-list">
+                <li class="modal-hidden-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/user_6.jpg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">Dilmurod</p>
+                    </button>
+                </li>
+                <li class="modal-hidden-item border">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/user.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">Add acount</p>
+                    </button>
+                </li>
+                <li class="modal-item ">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/elemnt_1.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">new group</p>
+                    </button>
+                </li>
+                <li class="modal-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/element_2.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">new chanel</p>
+                    </button>
+                </li>
+                <li class="modal-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/element_3.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">contacts</p>
+                    </button>
+                </li>
+                <li class="modal-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/element_4.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">calls</p>
+                    </button>
+                </li>
+                <li class="modal-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/element_5.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">settings</p>
+                    </button>
+                </li>
+                <li class="modal-item">
+                    <button class="modal-item-button">
+                        <img class="modal-item__icon" src="./img/element_6.svg" alt="modal-item-icon">
+                        <p class="modal-item__subtitle">night mode</p>
+                    </button>
+                </li>
+            </ul>
         </div>
-    </main>
+    </div>
+    <section class="telegram">
+      <div class="container">
+        
+        <ul class="contacts-list">
+            <li class="contacts-list-header">
+                <button class="contacts-item__settings-btn">
+                    <img class="contacts-item__settings-btn__img" src="./img/menu.svg" alt="menu-img">
+                </button>
+                <input class="contacts-item__int" type="text" placeholder="Search">
+            </li>
+            <li class="contacts-item">
+                <button class="contacts-item__btn">
+                    <img class="user-img" src="./img/user_1.jpg" alt="user-img">
+                    <span class="contact-tetx">
+                        <p class="contact-name">Abbos</p>
+                        <p class="contact-subtitle">Qalesan</p>
+                    </span>
+                </button>
+            </li>
+            <li class="contacts-item">
+                <button class="contacts-item__btn">
+                    <img class="user-img" src="./img/user_2.jpg" alt="user-img">
+                    <span class="contact-tetx">
+                        <p class="contact-name">Fazliddin</p>
+                        <p class="contact-subtitle">Nima gap</p>
+                    </span>
+                </button>
+            </li>
+            <li class="contacts-item">
+                <button class="contacts-item__btn">
+                    <img class="user-img" src="./img/user_4.jpg" alt="user-img">
+                    <span class="contact-tetx">
+                        <p class="contact-name">Maxmud</p>
+                        <p class="contact-subtitle">Salom</p>
+                    </span>
+                </button>
+            </li>
+        </ul>
+        <div class="chat">
+            <div class="chat_Abbos">
+                <header class="chat-header">
+                    <button class="chat-header__text" type="button">
+                        <p class="chat-header__text__title">Abbos</p>
+                        <p class="chat-header__text__subtitle">last seen recently</p>
+                    </button>
+                    <div class="chat-header__img">
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-2.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-1.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/element_4.svg" alt="chat-header__img">
+                        </button>
+                    </div>
+                </header>
+                <ul class="chat-list"></ul>
+                <nav class="chat-nav">
+                    <button class="chat-nav__btn">
+                        <img class="chat-nav__btn__icon" src="./img/clip.svg" alt="">
+                    </button>
+                    <form class="chat-nav-form">
+                        <input class="chat-nav-label__int" type="text" placeholder="Write a massage...">
+                        <button class="chat-nav-label__btn" type="submit">
+                            <img class="chat-nav-label__btn__icon" src="./img/send.svg" alt="send-icon">
+                        </button>
+                    </form>
+                </nav>
+            </div>
+            <div class="chat_Fazliddin">
+                <header class="chat-header">
+                    <button class="chat-header__text" type="button">
+                        <p class="chat-header__text__title">Fazliddin</p>
+                        <p class="chat-header__text__subtitle">last seen recently</p>
+                    </button>
+                    <div class="chat-header__img">
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-2.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-1.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/element_4.svg" alt="chat-header__img">
+                        </button>
+                    </div>
+                </header>
+                <ul class="chat-list"></ul>
+                <nav class="chat-nav">
+                    <button class="chat-nav__btn">
+                        <img class="chat-nav__btn__icon" src="./img/clip.svg" alt="">
+                    </button>
+                    <form class="chat-nav-form">
+                        <input class="chat-nav-label__int" type="text" placeholder="Write a massage...">
+                        <button class="chat-nav-label__btn" type="submit">
+                            <img class="chat-nav-label__btn__icon" src="./img/send.svg" alt="send-icon">
+                        </button>
+                    </form>
+                </nav>
+            </div>
+            <div class="chat_Maxmud">
+                <header class="chat-header">
+                    <button class="chat-header__text" type="button">
+                        <p class="chat-header__text__title">Maxmud</p>
+                        <p class="chat-header__text__subtitle">last seen recently</p>
+                    </button>
+                    <div class="chat-header__img">
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-2.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/chat-header-icon-1.svg" alt="chat-header__img">
+                        </button>
+                        <button class="chat-header__img__btn">
+                            <img class="chat-header__img-icon" src="./img/element_4.svg" alt="chat-header__img">
+                        </button>
+                    </div>
+                </header>
+                <ul class="chat-list"></ul>
+                <nav class="chat-nav">
+                    <button class="chat-nav__btn">
+                        <img class="chat-nav__btn__icon" src="./img/clip.svg" alt="">
+                    </button>
+                    <form class="chat-nav-form">
+                        <input class="chat-nav-label__int" type="text" placeholder="Write a massage...">
+                        <button class="chat-nav-label__btn" type="submit">
+                            <img class="chat-nav-label__btn__icon" src="./img/send.svg" alt="send-icon">
+                        </button>
+                    </form>
+                </nav>
+            </div>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
 </body>
 </html>
