@@ -217,7 +217,7 @@ body {
 /* ----------modal---------- */
 
 .modal{
-    margin-left: 70px;
+    margin-left: 100px;
     z-index: 2;
     width: 270px;
     height: 100vh;
@@ -225,7 +225,7 @@ body {
     opacity: 1;
 }
 .background-modal{
-    display: block;
+    display: none;
     position: absolute;
     width: 100vw;
     height: 100vh;
@@ -234,6 +234,16 @@ body {
 }
 .modal-header__img{
     width: 20px;
+}
+
+.close-button{
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
 }
 .modal-header__info__img{
     width: 50px;
@@ -254,6 +264,7 @@ body {
     background-color: #276899;
     height: 150px;
     padding-left: 20px;
+    position: relative;
 }
 .modal-header__btn{
     padding-top: 25px;
@@ -297,10 +308,9 @@ body {
 .modal-item{
     display: block;
 }
-
 .modal-item-button{
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 5px;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -314,14 +324,17 @@ body {
     border-bottom: 1px solid black;
     padding-bottom: 10px;
 }
-.modal-hidden-item:hover{
-    background-color: #232E3C;
-}
-.modal-item__icon{
+.user-icon{
     width: 30px;
     margin-right: 15px;
     height: 30px;
     border-radius: 50%;
+
+}
+.modal-item__icon{
+    width: 25px;
+    margin-right: 15px;
+    height: 25px;
 }
 .modal-item__subtitle{
     text-transform: capitalize;
@@ -329,4 +342,125 @@ body {
     font-size: 14px;
 }
 
-/* ----------modal---------- */
+/* ----------modal-settings---------- */
+
+.background-settings-modal{
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+.settings-modal{
+    margin: auto;
+    margin-top: 30px;
+    z-index: 2;
+    width: 350px;
+    height: 95vh;
+    background-color: #17212B;
+    opacity: 1; 
+    display: flex;
+    flex-direction: column;
+}
+.settings-modal__header{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.settings-modal__header__title{
+    color: white;
+    font-size: 18px;
+
+}
+.settings-modal__header__btn-close{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 17px;
+    margin-left: 17px;
+}
+.settings-modal__header__btn-menu{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 17px;
+    margin-left: auto;
+}
+.modal-settings-list{
+    overflow-y: scroll;
+}
+.modal-settings-list::-webkit-scrollbar{
+    width: 7px;
+}
+.modal-settings-list::-webkit-scrollbar-track{
+    background-color: #17212B;
+}
+.modal-settings-list::-webkit-scrollbar-thumb{
+    background-color: #9b9FA4;
+    border: 1.5px solid #17212B;
+    height: 300px;
+    border-radius: 10px;
+}
+.modal-settings-hedaer{
+    display: flex;
+    align-items: center;
+    padding: 42px 15px;
+    border-bottom: 10px solid #232E3C;
+}
+.modal-settings-header__img{
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+}
+.modal-settings-hedaer__texts{
+    padding-left: 15px;
+}
+.modal-settings-hedaer__texts__title{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.modal-settings-hedaer__texts__subtitle{
+    color: skyblue;
+    font-size: 12px;
+}
+.modal-settings-item{
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    transition: background-color 0.1s;
+}
+.modal-settings-item:hover{
+    background-color: #232E3C;
+}
+.modal-settings-title__icon{
+    width: 25px;
+    margin-right: 10px;
+}
+.modal-settings-item__subtitle{
+    color: #bbbbbb;
+    font-size: 16px;
+}
+.modal-settings-hr{
+    width: 100%;
+    background-color: #232E3C;
+    border: none;
+    height: 10px;
+    margin-bottom: 10px;
+}
+.modal-settings-item--scale-settings{
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.scale-settings-item__subtitle{
+    border-top: 3px solid #999999;
+    color: gray;
+    padding-top: 7px;
+    margin-right: 2px;
+    padding-right: 5px;
+}
+.scale-settings-item__subtitle:hover{
+    border-top: 3px solid #1086C0;
+}

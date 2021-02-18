@@ -11,6 +11,70 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-settings-modal">
+        <div class="settings-modal">
+            <header class="settings-modal__header">
+                <p class="settings-modal__header__title">Settings</p>
+                <button class="settings-modal__header__btn-menu">
+                    <img src="./img/menu2.svg" alt="settings-modal__header__btn-menu">
+                </button>
+                <button class="settings-modal__header__btn-close">
+                    <img class="settings-modal__header__btn__img" src="./img/close.svg" alt="settings-modal-close-btn">
+                </button>
+            </header>
+            <ul class="modal-settings-list">
+                <div class="modal-settings-hedaer">
+                    <img class="modal-settings-header__img" src="./img/user_6.jpg" alt="modal-settings-header__img">
+                    <span class="modal-settings-hedaer__texts">
+                        <p class="modal-settings-hedaer__texts__title">Dilmurod</p>
+                        <p class="modal-settings-hedaer__texts__subtitle">Online</p>
+                    </span>
+                </div>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/danger-symbol.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Edit profile</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/bell.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Notifications</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/padlock.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Privacy and Security</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/chat.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Chat Settings</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/folder2.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Folders</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/settings.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Advanced</p>
+                </li>
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/typographic-button.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Language</p>
+                </li>
+                <hr class="modal-settings-hr">
+                <li class="modal-settings-item">
+                    <img class="modal-settings-title__icon" src="./img/view.svg" alt="modal-settings-icon">
+                    <p class="modal-settings-item__subtitle">Default iterface scale</p>
+                </li>
+                <li class="modal-settings-item--scale-settings">
+                    <p class="scale-settings-item__subtitle">100%</p>
+                    <p class="scale-settings-item__subtitle">125%</p>
+                    <p class="scale-settings-item__subtitle">150%</p>
+                    <p class="scale-settings-item__subtitle">200%</p>
+                    <p class="scale-settings-item__subtitle">250%</p>
+                    <p class="scale-settings-item__subtitle">300%</p>
+                </li>
+                <hr class="modal-settings-hr">
+            </ul>
+        </div>
+    </div>
     <div class="background-modal">
         <div class="modal">
             <header class="modal-header">
@@ -34,18 +98,6 @@
                 </button>
             </header>
             <ul class="modal-list">
-                <li class="modal-hidden-item">
-                    <button class="modal-item-button">
-                        <img class="modal-item__icon" src="./img/user_6.jpg" alt="modal-item-icon">
-                        <p class="modal-item__subtitle">Dilmurod</p>
-                    </button>
-                </li>
-                <li class="modal-hidden-item border">
-                    <button class="modal-item-button">
-                        <img class="modal-item__icon" src="./img/user.svg" alt="modal-item-icon">
-                        <p class="modal-item__subtitle">Add acount</p>
-                    </button>
-                </li>
                 <li class="modal-item ">
                     <button class="modal-item-button">
                         <img class="modal-item__icon" src="./img/elemnt_1.svg" alt="modal-item-icon">
@@ -71,7 +123,7 @@
                     </button>
                 </li>
                 <li class="modal-item">
-                    <button class="modal-item-button">
+                    <button class="modal-item-button settingsModalBtn">
                         <img class="modal-item__icon" src="./img/element_5.svg" alt="modal-item-icon">
                         <p class="modal-item__subtitle">settings</p>
                     </button>
@@ -87,7 +139,6 @@
     </div>
     <section class="telegram">
       <div class="container">
-        
         <ul class="contacts-list">
             <li class="contacts-list-header">
                 <button class="contacts-item__settings-btn">
@@ -96,7 +147,7 @@
                 <input class="contacts-item__int" type="text" placeholder="Search">
             </li>
             <li class="contacts-item">
-                <button class="contacts-item__btn">
+                <button class="contacts-item__btn contact-abbos">
                     <img class="user-img" src="./img/user_1.jpg" alt="user-img">
                     <span class="contact-tetx">
                         <p class="contact-name">Abbos</p>
@@ -105,7 +156,7 @@
                 </button>
             </li>
             <li class="contacts-item">
-                <button class="contacts-item__btn">
+                <button class="contacts-item__btn contact-fazliddin">
                     <img class="user-img" src="./img/user_2.jpg" alt="user-img">
                     <span class="contact-tetx">
                         <p class="contact-name">Fazliddin</p>
@@ -114,7 +165,7 @@
                 </button>
             </li>
             <li class="contacts-item">
-                <button class="contacts-item__btn">
+                <button class="contacts-item__btn contact-maxmud">
                     <img class="user-img" src="./img/user_4.jpg" alt="user-img">
                     <span class="contact-tetx">
                         <p class="contact-name">Maxmud</p>
