@@ -39,6 +39,64 @@ let intMaxmudElement = $('.int-maxmud')
 let btnMaxmudElement = $('.btn-maxmud')
 let listMaxmudElement = $('.chat-list-maxmud')
 
+let abbosInfoBtnModalElement = $('.abbos-info-modal')
+let fazliddinInfoBtnModalElement = $('.fazliddin-info-modal')
+let maxmudInfoBtnModalElement = $('.maxmud-info-modal')
+
+let abbosInfoModalElement = $('.abbos-modal-background') 
+let fazliddinInfoModalElement = $('.fazliddin-modal-background') 
+let maxmudInfoModalElement = $('.maxmud-modal-background')
+
+let abbosClose = $('.close-abbos')
+let fazliddinClose = $('.close-fazliddin')
+let maxmudClose = $('.close-maxmud')
+
+// --------------------------------------------------------------------------
+abbosClose.addEventListener('click', event =>{
+    event.preventDefault()
+    abbosInfoModalElement.style.display = 'none'
+})
+fazliddinClose.addEventListener('click', event =>{
+    event.preventDefault()
+    fazliddinInfoModalElement.style.display = 'none'
+})
+maxmudClose.addEventListener('click', event =>{
+    event.preventDefault()
+    maxmudInfoModalElement.style.display = 'none'
+})
+window.addEventListener('click', event =>{
+    event.preventDefault()
+    if (event.target == abbosInfoModalElement) {
+        abbosInfoModalElement.style.display =  'none'
+    }
+})
+window.addEventListener('click', event =>{
+    event.preventDefault()
+    if (event.target == fazliddinInfoModalElement) {
+        fazliddinInfoModalElement.style.display =  'none'
+    }
+})
+window.addEventListener('click', event =>{
+    event.preventDefault()
+    if (event.target == maxmudInfoModalElement) {
+        maxmudInfoModalElement.style.display =  'none'
+    }
+})
+abbosInfoBtnModalElement.addEventListener('click', event =>{
+    abbosInfoModalElement.style.display = 'block'
+    dazliddinInfoModalElement.style.display = 'none'
+    maxmudInfoModalElement.style.display = 'none'
+})
+fazliddinInfoBtnModalElement.addEventListener('click', event =>{
+    abbosInfoModalElement.style.display = 'none'
+    dazliddinInfoModalElement.style.display = 'block'
+    maxmudInfoModalElement.style.display = 'none'
+})
+maxmudInfoBtnModalElement.addEventListener('click', event =>{
+    abbosInfoModalElement.style.display = 'none'
+    dazliddinInfoModalElement.style.display = 'none'
+    maxmudInfoModalElement.style.display = 'block'
+})
 btnMaxmudElement.addEventListener('click', event =>{
     let liMaxmudElement = document.createElement('li')
     liMaxmudElement.classList.add('chat-item')
@@ -63,7 +121,6 @@ btnAbbosElement.addEventListener('click', event =>{
     intAbbosElement.value = ""
 })
 
-// --------------------------------------------------------------------------
 chatAbbosBtnElement.addEventListener('click', event =>{
     event.preventDefault()
     chatAbbosElement.style.display = 'block';
