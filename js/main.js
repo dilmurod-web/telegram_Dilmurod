@@ -19,24 +19,80 @@ let chatAbbosBtnElement = $('.contact-abbos')
 let chatFazliddinBtnElement = $('.contact-fazliddin')
 let chatMaxmudBtnElement = $('.contact-maxmud')
 
+let chatListAbbosElement = $('.chat-list-abbos')
+let chatListFazliddinElement = $('.chat-list-fazliddin')
+let chatListMaxmudElement = $('.chat-list-maxmud')
+
+let contactsItemAbbbosElement = $('.item-abbos')
+let contactsItemFazliddinElement = $('.item-fazliddin')
+let contactsItemMaxmudElement = $('.item-maxmud')
+
+let intAbbosElement = $('.int-abbos')
+let btnAbbosElement = $('.btn-abbos')
+let listAbbosElement = $('.chat-list-abbos')
+
+let intFazliddinElement = $('.int-fazliddin')
+let btnFazliddinElement = $('.btn-fazliddin')
+let listFazliddinElement = $('.chat-list-fazliddin')
+
+let intMaxmudElement = $('.int-maxmud')
+let btnMaxmudElement = $('.btn-maxmud')
+let listMaxmudElement = $('.chat-list-maxmud')
+
+btnMaxmudElement.addEventListener('click', event =>{
+    let liMaxmudElement = document.createElement('li')
+    liMaxmudElement.classList.add('chat-item')
+    liMaxmudElement.textContent = intMaxmudElement.value
+    listMaxmudElement.appendChild(liMaxmudElement)
+    intMaxmudElement.value = ""
+})
+
+btnFazliddinElement.addEventListener('click', event =>{
+    let liFazliddinElement = document.createElement('li')
+    liFazliddinElement.classList.add('chat-item')
+    liFazliddinElement.textContent = intFazliddinElement.value
+    listFazliddinElement.appendChild(liFazliddinElement)
+    intFazliddinElement.value = ""
+})
+
+btnAbbosElement.addEventListener('click', event =>{
+    let liAbbosElement = document.createElement('li')
+    liAbbosElement.classList.add('chat-item')
+    liAbbosElement.textContent = intAbbosElement.value
+    listAbbosElement.appendChild(liAbbosElement)
+    intAbbosElement.value = ""
+})
+
 // --------------------------------------------------------------------------
 chatAbbosBtnElement.addEventListener('click', event =>{
     event.preventDefault()
     chatAbbosElement.style.display = 'block';
     chatFazliddinElemnt.style.display = 'none';
     chatMaxmudElement.style.display = 'none';
+
+    contactsItemAbbbosElement.style.backgroundColor = '#2B5278'
+    contactsItemFazliddinElement.style.backgroundColor = '#182533'
+    contactsItemMaxmudElement.style.backgroundColor = '#182533'
 })
 chatFazliddinBtnElement.addEventListener('click', event =>{
     event.preventDefault()
     chatAbbosElement.style.display = 'none';
     chatFazliddinElemnt.style.display = 'block';
     chatMaxmudElement.style.display = 'none';
+
+    contactsItemAbbbosElement.style.backgroundColor = '#182533'
+    contactsItemFazliddinElement.style.backgroundColor = '#2B5278'
+    contactsItemMaxmudElement.style.backgroundColor = '#182533'
 })
 chatMaxmudBtnElement.addEventListener('click', event =>{
     event.preventDefault()
     chatAbbosElement.style.display = 'none';
     chatFazliddinElemnt.style.display = 'none';
     chatMaxmudElement.style.display = 'block';
+
+    contactsItemAbbbosElement.style.backgroundColor = '#182533'
+    contactsItemFazliddinElement.style.backgroundColor = '#182533'
+    contactsItemMaxmudElement.style.backgroundColor = '#2B5278'
 })
 modalOpenButtonElement.addEventListener('click', event =>{
     event.preventDefault()
